@@ -11,6 +11,7 @@ import {
 } from "../Constants/OrderConstants";
 import { logout } from "./userActions";
 import axios from "axios";
+import { URL } from "../Url";
 
 // GET ALL PRODUCT
 export const listOrders = () => async (dispatch, getState) => {
@@ -27,7 +28,7 @@ export const listOrders = () => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.get(`/api/orders/all`, config);
+    const { data } = await axios.get(`${URL}/api/orders/all`, config);
 
     dispatch({ type: ORDER_LIST_SUCCESS, payload: data });
   } catch (error) {
@@ -60,7 +61,7 @@ export const getOrderDetails = (id) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.get(`/api/orders/${id}`, config);
+    const { data } = await axios.get(`${URL}/api/orders/${id}`, config);
 
     dispatch({ type: ORDER_DETAILS_SUCCESS, payload: data });
   } catch (error) {
@@ -93,7 +94,7 @@ export const deliveredOrder = (order) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.put(
-      `/api/orders/${order._id}/delivered`,
+      `${URL}/api/orders/${order._id}/delivered`,
       {},
       config
     );
