@@ -20,6 +20,6 @@
 </tr>
 </table>
 
-Link To the Website
-For Client Side: [a link](https://mppl-client.vercel.app/products/639ac1f9cb2210f40830443c)
+Link To the Website <br>
+For Client Side: [a link](https://mppl-client.vercel.app/)
 For Admin Side: [a link](https://admin-mppl-628l6jxim-arraidh.vercel.app/login)
