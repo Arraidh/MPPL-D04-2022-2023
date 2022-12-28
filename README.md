@@ -21,5 +21,5 @@
 </table>
 
 Link To the Website <br>
-For Client Side: [a link](https://mppl-client.vercel.app/)
-For Admin Side: [a link](https://admin-mppl-628l6jxim-arraidh.vercel.app/login)
+For Client Side: [Client](https://mppl-client.vercel.app/) <br>
+For Admin Side: [Admin](https://admin-mppl-628l6jxim-arraidh.vercel.app/login)
